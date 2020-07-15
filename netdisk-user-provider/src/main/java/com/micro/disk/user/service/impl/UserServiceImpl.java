@@ -8,11 +8,14 @@ import com.alibaba.dubbo.config.annotation.Service;
 
 
 
-/**
+/*
+*
  * @author chy
  * @version 1.0
  * @date 2020/7/15 9:13
- */
+*/
+
+
 
 @Service(interfaceClass=UserService.class)
 @Component
@@ -22,28 +25,28 @@ public class UserServiceImpl implements UserService{
 	public Page<UserBean> findUserPageList(Integer page, Integer limit, String username, String nickname) {
 		Page<UserBean> p=new Page<UserBean>();
 		List<UserBean> rows=new ArrayList<UserBean>();
-		
+
 		UserBean bean1=new UserBean();
 		bean1.setId("1");
 		bean1.setNickname("超级管理员");
 		bean1.setUsername("admin");
 		bean1.setTelephone("15177917744");
 		rows.add(bean1);
-		
+
 		UserBean bean2=new UserBean();
 		bean2.setId("2");
 		bean2.setNickname("测试账号");
 		bean2.setUsername("test");
 		bean2.setTelephone("13307773517");
 		rows.add(bean2);
-		
-		
+
+
 		p.setCode(0);
 		p.setMsg("查询成功");
 		p.setRows(rows);
 		p.setTotalElements(2);
 		p.setTotalPage(1);
-		
+
 		return p;
 	}
 
@@ -51,7 +54,7 @@ public class UserServiceImpl implements UserService{
 	public List<TreeJson> findUserTree(String pid, String type) {
 		List<TreeJson> trees=new ArrayList<TreeJson>();
 		if("root".equals(type)){
-			if("0".equals(pid)){				
+			if("0".equals(pid)){
 				TreeJson tree=new TreeJson();
 				tree.setId("1");
 				tree.setLabel("测试部门");
@@ -59,7 +62,7 @@ public class UserServiceImpl implements UserService{
 				tree.setDisabled(true);
 				trees.add(tree);
 			}
-			
+
 		}else if("org".equals(type)){
 			if("1".equals(pid)){
 				TreeJson tree1=new TreeJson();
@@ -68,7 +71,7 @@ public class UserServiceImpl implements UserService{
 				tree1.setType("position");
 				tree1.setDisabled(true);
 				trees.add(tree1);
-				
+
 				TreeJson tree2=new TreeJson();
 				tree2.setId("3");
 				tree2.setLabel("开发人员");
@@ -84,7 +87,7 @@ public class UserServiceImpl implements UserService{
 				tree.setType("user");
 				tree.setDisabled(false);
 				trees.add(tree);
-				
+
 			}else if("3".equals(pid)){
 				TreeJson tree=new TreeJson();
 				tree.setId("2");
@@ -148,7 +151,7 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public void logout(String token) {
-		
+
 	}
 
 }

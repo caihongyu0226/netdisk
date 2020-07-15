@@ -7,8 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="netdisk-user-provider" />
+        <module name="netdisk-web-manage" />
         <module name="netdisk-user-api" />
+        <module name="netdisk-user-provider" />
+        <module name="netdisk-service-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
