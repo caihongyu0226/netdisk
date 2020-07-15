@@ -6,6 +6,12 @@ import com.micro.disk.user.bean.SessionUserBean;
 import com.micro.disk.user.bean.TreeJson;
 import com.micro.disk.user.bean.UserBean;
 
+/**
+ * @author chy
+ * @version 1.0
+ * @date 2020/7/15 9:13
+ */
+
 public interface UserService {
 	/**
 	 * 用户列表：分页
