@@ -15,6 +15,14 @@
     <module>netdisk-web-manage</module>
     <module>netdisk-service-api</module>
     <module>netdisk-user-api</module>
+      <module>netdisk-service-provider</module>
+    <module>netdisk-log-api</module>
+      <module>netdisk-log-provider</module>
+      <module>utils-common</module>
+    <module>utils-filesearch</module>
+    <module>utils-filestore</module>
+      <module>netdisk-web-perpc</module>
+    <module>utils-office</module>
   </modules>
 
   <parent>
