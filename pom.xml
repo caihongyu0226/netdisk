@@ -11,6 +11,7 @@
 
   <modules>
     <module>netdisk-user-api</module>
+    <module>netdisk-user-provider</module>
   </modules>
 
   <parent>
