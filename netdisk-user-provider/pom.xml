@@ -55,10 +55,12 @@
             </exclusions>
         </dependency>
         <!-- 接口 -->
+
         <dependency>
             <groupId>com.micro</groupId>
             <artifactId>netdisk-user-api</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
 
 

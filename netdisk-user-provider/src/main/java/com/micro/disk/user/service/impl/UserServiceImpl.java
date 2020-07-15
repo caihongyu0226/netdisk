@@ -2,6 +2,12 @@ package com.micro.disk.user.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.micro.disk.user.bean.Page;
+import com.micro.disk.user.bean.SessionUserBean;
+import com.micro.disk.user.bean.TreeJson;
+import com.micro.disk.user.bean.UserBean;
+import com.micro.disk.user.service.UserService;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import com.alibaba.dubbo.config.annotation.Service;
@@ -17,7 +23,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 
 
 
-@Service(interfaceClass=UserService.class)
+@Service(interfaceClass= UserService.class)
 @Component
 public class UserServiceImpl implements UserService{
 

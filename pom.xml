@@ -14,6 +14,7 @@
     <module>netdisk-user-provider</module>
     <module>netdisk-web-manage</module>
     <module>netdisk-service-api</module>
+    <module>netdisk-user-api</module>
   </modules>
 
   <parent>
@@ -33,7 +34,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.10</version>
+
     </dependency>
 
   </dependencies>
